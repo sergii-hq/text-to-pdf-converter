@@ -1,0 +1,9 @@
+.page {
+  padding: 30px 0;
+}
+
+.page-header, .page-body, .page-footer {
+  &:empty {
+    display: none;
+  }
+}

@@ -44,7 +44,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ### Description
 The "Text to PDF converter" project is a simple Angular application that allows users to convert entered text into a PDF document. The application uses an external API for text to PDF conversion and displays the result in a PDF viewer. Additionally, the application stores the conversion history in the browser's local storage.
 
-### Project Structure
+### Project structure
 
 - **src/**
   - **app/**

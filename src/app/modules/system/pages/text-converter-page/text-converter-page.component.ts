@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnDestroy, OnIni
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ConverterService } from '../../services/converter.service';
 import { Subject, takeUntil } from 'rxjs';
-import { PdfJsViewerComponent } from 'ng2-pdfjs-viewer/src/ng2-pdfjs-viewer.component';
+import { PdfJsViewerComponent } from 'ng2-pdfjs-viewer';
 
 @Component({
   selector: 'app-text-converter-page',

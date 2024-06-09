@@ -8,7 +8,7 @@ Before you begin, ensure you have installed all necessary software and tools: No
 
 # Initial setup
 
-Start by cloning the repository to your local machine using command `git clone https://github.com/sergii-hq/text-to-pdf-converter.git`, then navigate to the primary project directory `cd trending-news` and run `npm install` to install the necessary dependencies.
+Start by cloning the repository to your local machine using command `git clone https://github.com/sergii-hq/text-to-pdf-converter.git`, then navigate to the primary project directory `cd text-to-pdf-converter` and run `npm install` to install the necessary dependencies.
 
 ## Development server
 

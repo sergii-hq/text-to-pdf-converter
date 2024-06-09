@@ -1,0 +1,24 @@
+.text-converter-page {
+  h1 {
+    text-align: center;
+  }
+
+  .field-container {
+    margin-bottom: 0;
+  }
+
+  li {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #D4D4D7;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: #027EFD;
+    }
+  }
+
+  .pdf-viewer-wrapper {
+    min-height: 400px;
+  }
+}

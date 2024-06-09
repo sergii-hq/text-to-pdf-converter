@@ -1,0 +1,17 @@
+<div class="field-container" [class.field-error]="control.invalid && control.touched">
+  <div class="label-wrapper" *ngIf="label">
+    <label [for]="id">{{ label }}</label>
+  </div>
+  <div class="field-wrapper">
+    <textarea
+      class="field-textarea"
+      [id]="id"
+      [formControl]="control | asFormControl"
+      [placeholder]="placeholder"
+      [rows]="rows"
+    ></textarea>
+  </div>
+  <div class="error-messages" *ngIf="control.invalid && control.touched">
+    <div class="error-message">Це поле є обов'язковим</div>
+  </div>
+</div>

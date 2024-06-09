@@ -1,3 +1,30 @@
 <app-page-content class="text-converter-page">
-  <div id="page-content"></div>
+  <div id="page-content">
+    <h1>Конвертер тексту в PDF</h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="data">
+        <form [formGroup]="form">
+          <app-textarea-field
+            [label]="'Текст для конвертації'"
+            [placeholder]="'Введіть текст тут'"
+            [control]="form.controls['text']"
+          ></app-textarea-field>
+
+          <button class="btn btn-accent btn-size-md mt-4" (click)="convertToPDF()">Конвертувати в PDF</button>
+        </form>
+
+        <div class="mt-10" *ngIf="conversionHistory.length">
+          <h2>Історія конвертування</h2>
+          <ul>
+            <li *ngFor="let item of conversionHistory; let i = index" (click)="viewPDF(item)">PDF файл {{ i + 1 }}</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pdf-viewer-wrapper">
+        <ng2-pdfjs-viewer #pdfViewer></ng2-pdfjs-viewer>
+      </div>
+    </div>
+  </div>
 </app-page-content>
